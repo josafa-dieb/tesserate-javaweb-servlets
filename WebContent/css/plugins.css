@@ -1,0 +1,222 @@
+@keyframes buttonHover{
+     10%   {
+      background: 
+          linear-gradient(
+              to right bottom, 
+              rgb(185, 66, 244) 43%, 
+              rgb(65, 181, 244) 99%
+          );
+    }
+
+    20%   {
+      background: 
+          linear-gradient(
+              to right bottom, 
+              rgb(185, 66, 244) 38%, 
+              rgb(65, 181, 244) 98%
+          );
+    }
+    30%   {
+      background: 
+          linear-gradient(
+              to right bottom, 
+              rgb(185, 66, 244) 34%, 
+              rgb(65, 181, 244) 97%
+          );
+    }
+    40%   {
+      background: 
+          linear-gradient(
+              to right bottom, 
+              rgb(185, 66, 244) 28%, 
+              rgb(65, 181, 244) 96%
+          );
+    }
+    50%   {
+      background: 
+          linear-gradient(
+              to right bottom, 
+              rgb(185, 66, 244) 24%, 
+              rgb(65, 181, 244) 95%
+          );
+    }
+    60%   {
+      background: 
+          linear-gradient(
+              to right bottom, 
+              rgb(185, 66, 244) 18%, 
+              rgb(65, 181, 244) 94%
+          );
+    }
+    70%   {
+          background: 
+              linear-gradient(
+                  to right bottom, 
+                  rgb(185, 66, 244) 14%, 
+                  rgb(65, 181, 244) 93%
+              );
+    }
+     90%   {
+          background: 
+              linear-gradient(
+                  to right bottom, 
+                  rgb(185, 66, 244) 8%, 
+                  rgb(65, 181, 244) 92%
+              );
+    }
+    100%   {
+          background: 
+              linear-gradient(
+                  to right bottom, 
+                  rgb(185, 66, 244) 4%, 
+                  rgb(65, 181, 244) 91%
+              );
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    font-weight: 700;
+    color: aliceblue;
+    background: linear-gradient(to left top, rgb(185, 66, 244) 45%, rgb(65, 181, 244));
+    box-shadow: 0px 0px 5px gray;
+}
+nav ul {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 382px;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 50px;
+}
+nav ul li{
+    display: inline-block;
+    position: static;
+    margin: 0;
+    padding: 0;
+}
+div.pesquisar label[for="pesquisar"]{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    font-family: sans-serif;
+    border: 0;
+    border-radius: 0 50px 50px 0;
+    padding: 3.0%;
+   background: linear-gradient(to right bottom, rgb(185, 66, 244) 45%, rgb(65, 181, 244));
+}
+div.pesquisar label[for="pesquisar"]:hover{
+    cursor: pointer;
+    animation-name: buttonHover;
+	animation-duration: 1s;
+	animation-direction: alternate;
+    animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+    
+}
+div.pesquisar input[name="pesquisar"]{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 260px;
+    border-style: none;
+    border-color: white;
+    background: white;
+    position: relative;
+    left: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 3.2%;
+    text-align: center;
+    
+}
+div.pesquisar{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+}
+label[for="voltar"]{
+    display: inline-block;
+    position: relative;
+    width: 45px;
+    padding: 15px 0;
+    background: linear-gradient(to right bottom, rgb(185, 66, 244) 45%, rgb(65, 181, 244));
+    border: 0;
+    margin: 0;
+    border-radius: 50px 0 0 50px;
+    text-align: center;
+}
+label[for="voltar"]:hover{
+    cursor: pointer;
+    transition: 0.29s;
+    animation-name: buttonHover;
+	animation-duration: 1.2s;
+	animation-direction: alternate;
+    animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
+
+main{
+    display: block;
+    position: relative;
+    background-color: white; 
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    
+}
+
+.item{
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    box-shadow: 0px 0px 5px gray;
+    text-align: center;
+    color: dimgray;
+    margin-top: 3%;
+    margin-left: 2.5%;
+
+}
+.item header{
+    
+    padding: 25px 0;
+/*    box-shadow: 0px 5px 5px lightgray;*/
+}
+.item footer button{
+    padding: 5px;
+    font-size: 1.2em;
+    border: 0;
+    width: 100%;
+    color: aliceblue;
+    font-weight: bold;
+    background: linear-gradient(to left top, rgb(185, 66, 244) 60%, rgb(65, 181, 244));
+}
+.item footer button p{
+    text-shadow: 0px 0px 5px lightgray;
+}
+.item footer button:hover{
+    cursor: pointer;
+    background: linear-gradient(to left top, rgba(185, 66, 244,0.9) 60%, rgba(65, 181, 244,0.9));
+    transition: 1s;
+}
